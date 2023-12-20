@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    align-items: center;
+    padding: 20px 70px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+h2 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #000000;
+    width: 100%;
+    line-height: 50px;
+}
+
+header .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header nav {
+    width: 35%;
+}
+
+header nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+header nav ul li a.active {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+
+header nav ul li a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+
+a.tbl-biru {
+    background-color: rgba(255, 233, 188, 0.592);
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tbl-biru:hover {
+    background-color: #00000000;
+    text-decoration: none;
+}
+
+
+
+/* Main */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main .home {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url(imgs/apaajadah.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main .home .container {
+    display: flex;
+    align-items: center;
+}
+
+main .home .container .container-img img {
+    width: 100%;
+}
+
+
+main .home .container .container-text {
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main .about {
+    display: flex;
+    /* height: 100vh; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 200px;
+    text-align: center;
+    background-color: rgba(255, 225, 165, 0.592);
+}
+
+main .about .container {
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main .container-box {
+    display: flex;
+    margin-top: 100px;
+}
+
+main .about .box {
+    background-color: rgba(255, 255, 255, 0.622);
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    margin: 10px;
+    width: 70vh;
+    padding: 30px;
+    border: 1px solid;
+}
+
+main .about .box h1 {
+    margin-bottom: 15px;
+}
+
+main .menu {
+    /* margin-top: 50px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 150px;
+    text-align: center;
+    background-color: rgba(255, 225, 165, 0.592);
+}
+
+main .menu .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main .menu .row .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 75vh;
+    align-items: center;
+    padding: 17px;
+    width: 20%;
+    background-color: rgba(255, 255, 255, 0.622);
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    border: 2px solid;
+    margin: 10px;
+
+}
+
+main .menu .row .box h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    height: 7vh;
+}
+
+main .menu .row .box:hover {
+    /* transition: 0.5s ease-in-out; */
+    /* width: 20%; */
+}
+
+main .menu .row .box img {
+    height: 25%;
+    margin-bottom: 10px;
+}
+
+main .menu .row .box p {
+    height: 50vh;
+}
+
+
+main .contact {
+    padding: 50px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid;
+}
+
+main section#Komentar {
+    background-color: rgba(255, 225, 165, 0.592);
+    padding-top: 150px;
+}
+
+main .contact .row {
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+main .contact .row .box {
+    /* background-color: black; */
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    width: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 100px;
+    height: 10vh;
+    justify-content: space-evenly;
+}
+
+main .contact .row .box a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+
+/* Footer */
+footer {
+    color: rgb(0, 0, 0);
+    /* background-image: url("./imgs/bawah.jpg"); */
+    background-color: rgba(255, 225, 165, 0.592);
+    padding: 5px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    background-size: cover;
+    height: 10vh;
+}
